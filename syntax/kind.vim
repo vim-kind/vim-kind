@@ -8,7 +8,7 @@ highlight link kindKeyword Keyword
 syntax keyword kindStatement do case as
 highlight link kindStatement Statement
 
-syntax match kindType "\<[A-Z][a-zA-Z0-9_']*\>"
+syntax match kindType "\<[A-Z][a-zA-Z0-9_]*\>\(\.\)\@!"
 highlight link kindType Type
 
 syntax keyword kindBooleanTrue    true
@@ -21,7 +21,9 @@ syntax match   kindOperator "[-!|&+<>=%/*~^:]"
 highlight link kindOperator Operator
 
 syntax keyword kindRefl refl
+syntax keyword kindMirror mirror
 highlight link kindRefl Macro
+highlight link kindMirror Macro
 
 syntax region kindString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@Spell
 highlight link kindString String

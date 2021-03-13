@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.kind setfiletype kind
+au BufNewFile,BufRead *.kind setfiletype kind | setlocal commentstring=//%s
