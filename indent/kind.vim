@@ -66,6 +66,10 @@ function! GetKindIndent()
     return match(prevline, '\S') - &shiftwidth
   endif
 
+  if prevline =~ ':\s*$'
+    return match(prevline, '\S') + &shiftwidth
+  endif
+
   if prevline =~ '^\S'
       return &shiftwidth
   endif
