@@ -3,7 +3,8 @@
 A vim plugin for kind. It provides syntax highlighting and indentation for kind files.
 
 ## Installation
-[source,vim]
+### [source,vim]
+
 ----
 Plug 'mynomoto/vim-kind'
 ----
