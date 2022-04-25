@@ -3,11 +3,11 @@
 A vim plugin for kind. It provides syntax highlighting and indentation for kind files.
 
 ## Installation
-### [source,vim]
 
-----
+
+```vim
 Plug 'mynomoto/vim-kind'
-----
+```
 
 ## Preview
 ![capa](https://github.com/SergioBonatto/vim-kind-1/blob/main/demonstration.png)
